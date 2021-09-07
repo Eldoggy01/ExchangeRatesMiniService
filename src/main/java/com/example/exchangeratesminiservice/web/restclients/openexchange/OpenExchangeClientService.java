@@ -80,7 +80,7 @@ public class OpenExchangeClientService {
      *
      * @param usdToCurrency1 курс доллара по отношению к первой валюте
      * @param usdToCurrency2 курс доллара по отношению ко второй валюте
-     *                       <p>
+     *
      *                       Returns  {@code BigDecimal}  курс первой валюты относительно второй
      */
     private BigDecimal getRateBetweenCurrenciesByUsdRates(String usdToCurrency1, String usdToCurrency2) {
