@@ -1,0 +1,14 @@
+version: "1"
+
+services:
+  exchange_rates_mimi_service:
+
+    build: .
+    image: exchange_rates_mimi_service_image
+    container_name: exchange_rates_mimi_service_container
+    ports:
+    - 9090:9090
+
+
+
+

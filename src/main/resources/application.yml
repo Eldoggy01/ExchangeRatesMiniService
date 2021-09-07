@@ -1,0 +1,14 @@
+server:
+  port: 9090
+
+quote-currency: "RUB"
+
+open-exchange:
+  value: "openExchange"
+  baseUrl: "https://openexchangerates.org"
+  appId: "ec4ee060434948c880e3dda7c2a035b2"
+
+giphy:
+  value: "giphy"
+  baseUrl: "https://api.giphy.com"
+  api-key: "5sbdwRRBrwXXmptjLBbgxzZIn7mRAOKn"
