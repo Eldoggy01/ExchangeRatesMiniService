@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat;
 
 /**
  * Класс для работы с внешним сервисом получения курсов валют openexchangerates.org
- * <p>
+ *
  * Использованы костыли для определения курсов между валютами на основании
  * курса доллара к этим валютам, т.к на бесплатном аккаунте в openexchangerates.org
  * можно получить курсы валют только относительно доллара.
@@ -36,7 +36,7 @@ public class OpenExchangeClientService {
      * application.yml с ключем 'quote-currency'.
      *
      * @param investigatedCurrency код валюты, изменение курса которой нужно проанализировать
-     *                             <p>
+     *
      *                             Returns   true, если он уменьшился,   false - если увеличился.
      */
     public boolean isRateBecameSmaller(String investigatedCurrency) {
@@ -63,7 +63,7 @@ public class OpenExchangeClientService {
      * @param openExchangeDataLatest объект с курсом доллара по отношению к остальным валютам
      * @param baseCurrency           код валюты, курс которой хотим получить относительно второй валюты
      * @param quoteCurrency          код валюты, по отношению к которой будем считать курс первой валюты
-     *                               <p>
+     *
      *                               Returns  {@code BigDecimal}  курс валюты baseCurrency относительно валюты quoteCurrency
      */
     private BigDecimal getRateBetweenCurrenciesByUsdRates(OpenExchangeData openExchangeDataLatest, String baseCurrency, String quoteCurrency) {
